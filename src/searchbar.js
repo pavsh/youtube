@@ -1,7 +1,8 @@
 import react from "react";
-class searchBar extends React.Component{
+
+class Searchbar extends React.Component{
     state = {
-        term:'Default text0'
+        term:'Default text'
     };
     handleChange = (event)=>{
         this.setState({
@@ -26,4 +27,5 @@ class searchBar extends React.Component{
         )
     }
 }
+export default Searchbar;
 
