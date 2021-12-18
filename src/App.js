@@ -4,7 +4,6 @@ import youtube from "./youtube";
 import VideoList from "./videolist";
 import VideoDetail from "./videodetail";
 
-
 class App extends React.Component{
   state={
     videos:[],
