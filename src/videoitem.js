@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import './styles/video.css'
 
 const VideoItem = ({video, handleVideoSelect})=>{

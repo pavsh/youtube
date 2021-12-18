@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import VideoItem from "./videoitem";
 
 const VideoList = ({videos,handleVideoSelect})=>{

@@ -3,8 +3,7 @@ import Searchbar from "./searchbar";
 import youtube from "./youtube";
 import VideoList from "./videolist";
 import VideoDetail from "./videodetail";
-import react from "react";
-
+import 'fomantic-ui-css/semantic.css'
 
 
 class App extends React.Component{
