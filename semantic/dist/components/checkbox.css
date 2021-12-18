@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Checkbox
+ * # Fomantic-UI 2.9.0-beta.171 - Checkbox
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -246,6 +246,7 @@
 }
 
 /* Selectable Label */
+.ui.checkbox input + label[for],
 .ui.checkbox input.hidden + label {
   cursor: pointer;
   -webkit-user-select: none;

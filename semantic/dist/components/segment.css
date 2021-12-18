@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Segment
+ * # Fomantic-UI 2.9.0-beta.171 - Segment
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -38,10 +38,10 @@
   border-radius: 0;
   box-shadow: none;
   border: none;
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
 }
-.ui.vertical.segment:last-child {
-  border-bottom: none;
+.ui.vertical.segment:first-child {
+  border-top: none;
 }
 
 /*-------------------
@@ -751,14 +751,16 @@
   width: calc(100% + 2px);
   max-width: calc(100% + 2px);
   box-shadow: none;
+}
+.ui.attached.segment:not(.basic) {
   border: 1px solid #D4D4D5;
 }
-.ui.attached:not(.message) + .ui.attached.segment:not(.top) {
+.ui.attached:not(.message):not(.text) + .ui.attached.segment:not(.top) {
   border-top: none;
 }
 
 /* Top */
-.ui[class*="top attached"].segment {
+.ui.segment[class*="top attached"] {
   bottom: 0;
   margin-bottom: 0;
   top: 0;
@@ -767,6 +769,9 @@
 }
 .ui.segment[class*="top attached"]:first-child {
   margin-top: 0;
+}
+.ui.tab.segment[class*="top attached"]:first-child {
+  margin-top: 1rem;
 }
 
 /* Bottom */
@@ -779,6 +784,9 @@
   border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 .ui.segment[class*="bottom attached"]:last-child {
+  margin-bottom: 0;
+}
+.ui.tab.segment[class*="bottom attached"]:last-child {
   margin-bottom: 1rem;
 }
 
@@ -793,6 +801,82 @@
 .ui.fitted.segment:not(.vertically) {
   padding-left: 0;
   padding-right: 0;
+}
+
+/*--------------
+    Scrolling
+  ---------------*/
+
+.ui.scrolling.segment {
+  overflow: auto;
+}
+@media only screen and (max-width: 767.98px) {
+  .ui.scrolling.segment.short {
+    max-height: 11.25em;
+  }
+  .ui.scrolling.segment[class*="very short"] {
+    max-height: 7.5em;
+  }
+  .ui.scrolling.segment {
+    max-height: 15em;
+  }
+  .ui.scrolling.segment.long {
+    max-height: 30em;
+  }
+  .ui.scrolling.segment[class*="very long"] {
+    max-height: 45em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ui.scrolling.segment.short {
+    max-height: 13.5em;
+  }
+  .ui.scrolling.segment[class*="very short"] {
+    max-height: 9em;
+  }
+  .ui.scrolling.segment {
+    max-height: 18em;
+  }
+  .ui.scrolling.segment.long {
+    max-height: 36em;
+  }
+  .ui.scrolling.segment[class*="very long"] {
+    max-height: 54em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ui.scrolling.segment.short {
+    max-height: 18em;
+  }
+  .ui.scrolling.segment[class*="very short"] {
+    max-height: 12em;
+  }
+  .ui.scrolling.segment {
+    max-height: 24em;
+  }
+  .ui.scrolling.segment.long {
+    max-height: 48em;
+  }
+  .ui.scrolling.segment[class*="very long"] {
+    max-height: 72em;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ui.scrolling.segment.short {
+    max-height: 22.5em;
+  }
+  .ui.scrolling.segment[class*="very short"] {
+    max-height: 15em;
+  }
+  .ui.scrolling.segment {
+    max-height: 30em;
+  }
+  .ui.scrolling.segment.long {
+    max-height: 60em;
+  }
+  .ui.scrolling.segment[class*="very long"] {
+    max-height: 90em;
+  }
 }
 
 /*-------------------

@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Popup
+ * # Fomantic-UI 2.9.0-beta.171 - Popup
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -322,8 +322,6 @@
   left: 50%;
   margin-left: -0.07142857rem;
   margin-top: 0.30714286em;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
 }
 
 /* Bottom Left */
@@ -411,6 +409,10 @@
           transform-origin: center bottom;
 }
 [data-position~="bottom"][data-tooltip]:after {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+[data-position="bottom center"][data-tooltip]:before {
   -webkit-transform-origin: center top;
           transform-origin: center top;
 }

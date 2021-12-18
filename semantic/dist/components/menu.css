@@ -350,7 +350,7 @@
 ---------------*/
 
 
-/* Menu divider shouldnt apply */
+/* Menu divider shouldn't apply */
 .ui.menu .list .item:before {
   background: none !important;
 }
@@ -653,10 +653,12 @@ Floated Menu / Item
   box-shadow: none;
   border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
 }
+.ui.tabular.menu .active.item:hover {
+  cursor: default;
+}
 
 /* Coupling with segment for attachment */
-.ui.tabular.menu + .attached:not(.top).segment,
-.ui.tabular.menu + .attached:not(.top).segment + .attached:not(.top).segment {
+.ui.tabular.menu ~ .attached:not(.top).segment {
   border-top: none;
   margin-left: 0;
   margin-top: 0;
@@ -746,6 +748,16 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   border-bottom: none;
+}
+.ui.inverted.tabular.menu .active.item,
+.ui.inverted.tabular.menu .active.item:hover {
+  background: none #1B1C1D;
+  border-color: #555555;
+}
+.ui.inverted.tabular.menu .item:not(.active):hover {
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
 }
 
 /*--------------
@@ -1159,8 +1171,8 @@ Floated Menu / Item
 }
 
 /*--------------
-    Icon Only
----------------*/
+      Icon Only
+  ---------------*/
 
 
 /* Vertical Menu */
@@ -1182,7 +1194,7 @@ Floated Menu / Item
   opacity: 1;
 }
 
-/* Icon Gylph */
+/* Icon Glyph */
 .ui.icon.menu i.icon:before {
   opacity: 1;
 }
@@ -1468,6 +1480,13 @@ Floated Menu / Item
 .ui.right.floated.menu {
   float: right;
   margin: 0 0 0 0.5rem;
+}
+.ui.center.aligned.menu,
+.ui.centered.menu {
+  display: inline-flex;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 50%;
 }
 
 /*--------------
@@ -2019,11 +2038,14 @@ Floated Menu / Item
 }
 
 /* Tabular Attached */
-.ui.attached.menu:not(.tabular) {
+.ui.attached.menu:not(.tabular):not(.text) {
   border: 1px solid #D4D4D5;
 }
 .ui.attached.inverted.menu {
   border: none;
+}
+.ui[class*="top attached"].inverted.tabular.menu {
+  border-bottom: 1px solid #555555;
 }
 .ui.attached.tabular.menu {
   margin-left: 0;

@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Item
+ * # Fomantic-UI 2.9.0-beta.171 - Item
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -69,8 +69,8 @@
 }
 
 /*--------------
-     Images
----------------*/
+       Images
+  ---------------*/
 
 .ui.items > .item > .image {
   position: relative;
@@ -139,8 +139,8 @@
 }
 
 /*--------------
-     Floated
----------------*/
+       Floated
+  ---------------*/
 
 .ui.items > .item [class*="left floated"] {
   float: left;
@@ -150,8 +150,8 @@
 }
 
 /*--------------
-  Content Image
----------------*/
+    Content Image
+  ---------------*/
 
 .ui.items > .item .content img {
   align-self: center;
@@ -165,8 +165,8 @@
 }
 
 /*--------------
-   Description
----------------*/
+     Description
+  ---------------*/
 
 .ui.items > .item > .content > .description {
   margin-top: 0.6em;
@@ -188,8 +188,8 @@
 }
 
 /*--------------
-      Meta
----------------*/
+        Meta
+  ---------------*/
 
 .ui.items > .item .meta {
   margin: 0.5em 0 0.5em;
@@ -278,8 +278,8 @@
 }
 
 /*----------------
-  Extra Content
------------------*/
+    Extra Content
+  -----------------*/
 
 .ui.items > .item .extra {
   display: block;

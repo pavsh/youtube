@@ -47,8 +47,8 @@ em[data-emoji].loading:before {
 }
 
 /*-------------------
-         Link
---------------------*/
+           Link
+  --------------------*/
 
 em[data-emoji].link:not(.disabled) {
   cursor: pointer;

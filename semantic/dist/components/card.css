@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Card
+ * # Fomantic-UI 2.9.0-beta.171 - Card
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -101,8 +101,8 @@
 }
 
 /*--------------
-     Images
----------------*/
+       Images
+  ---------------*/
 
 .ui.cards > .card > .image,
 .ui.card > .image {
@@ -173,8 +173,8 @@
 }
 
 /*----------------
- Floated Content
------------------*/
+   Floated Content
+  -----------------*/
 
 .ui.cards > .card [class*="left floated"],
 .ui.card [class*="left floated"] {
@@ -186,8 +186,8 @@
 }
 
 /*--------------
-     Aligned
----------------*/
+       Aligned
+  ---------------*/
 
 .ui.cards > .card [class*="left aligned"],
 .ui.card [class*="left aligned"] {
@@ -203,8 +203,8 @@
 }
 
 /*--------------
-  Content Image
----------------*/
+    Content Image
+  ---------------*/
 
 .ui.cards > .card .content img,
 .ui.card .content img {
@@ -222,8 +222,8 @@
 }
 
 /*--------------
-   Description
----------------*/
+     Description
+  ---------------*/
 
 .ui.cards > .card > .content > .description,
 .ui.card > .content > .description {
@@ -245,8 +245,8 @@
 }
 
 /*--------------
-      Meta
----------------*/
+        Meta
+  ---------------*/
 
 .ui.cards > .card .meta,
 .ui.card .meta {
@@ -304,8 +304,8 @@
 }
 
 /*--------------
-     Buttons
----------------*/
+       Buttons
+  ---------------*/
 
 .ui.cards > .card > .buttons,
 .ui.card > .buttons,
@@ -377,8 +377,8 @@
 }
 
 /*----------------
-  Extra Content
------------------*/
+    Extra Content
+  -----------------*/
 
 .ui.cards > .card > .extra,
 .ui.card > .extra {
@@ -874,8 +874,8 @@ a.ui.card:hover,
 }
 
 /*--------------
-   Card Count
----------------*/
+     Card Count
+  ---------------*/
 
 .ui.one.cards {
   margin-left: 0;
@@ -1170,24 +1170,31 @@ a.ui.card:hover,
 .ui.cards > .card {
   font-size: 1em;
 }
+.ui.mini.card,
 .ui.mini.cards .card {
   font-size: 0.78571429rem;
 }
+.ui.tiny.card,
 .ui.tiny.cards .card {
   font-size: 0.85714286rem;
 }
+.ui.small.card,
 .ui.small.cards .card {
   font-size: 0.92857143rem;
 }
+.ui.large.card,
 .ui.large.cards .card {
   font-size: 1.14285714rem;
 }
+.ui.big.card,
 .ui.big.cards .card {
   font-size: 1.28571429rem;
 }
+.ui.huge.card,
 .ui.huge.cards .card {
   font-size: 1.42857143rem;
 }
+.ui.massive.card,
 .ui.massive.cards .card {
   font-size: 1.71428571rem;
 }

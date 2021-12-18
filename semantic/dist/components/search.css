@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Search
+ * # Fomantic-UI 2.9.0-beta.171 - Search
  * http://github.com/fomantic/Fomantic-UI/
  *
  *

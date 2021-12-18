@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Sidebar
+ * # Fomantic-UI 2.9.0-beta.171 - Sidebar
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -128,7 +128,6 @@ body.pushable.dimmed {
   position: relative;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  overflow: hidden;
   min-height: 100%;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
@@ -137,6 +136,9 @@ body.pushable.dimmed {
   
 /* Pusher should inherit background from context */
   background: inherit;
+}
+.pushable > .pusher:not(.overflowing) {
+  overflow: hidden;
 }
 body.pushable > .pusher {
   background: #FFFFFF;

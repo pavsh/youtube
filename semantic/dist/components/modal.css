@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Modal
+ * # Fomantic-UI 2.9.0-beta.171 - Modal
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -68,8 +68,10 @@
   height: 2.25rem;
   padding: 0.625rem 0 0 0;
 }
+.ui.modal > .close:focus,
 .ui.modal > .close:hover {
   opacity: 1;
+  outline: none;
 }
 
 /*--------------

@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Icon
+ * # Fomantic-UI 2.9.0-beta.171 - Icon
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -94,6 +94,7 @@ i.disabled.icons {
           Fitted
   --------------------*/
 
+i.fitted.icons,
 i.fitted.icon {
   width: auto;
   margin: 0 !important;
@@ -547,6 +548,10 @@ i.icons {
   display: inline-block;
   position: relative;
   line-height: 1;
+  min-width: 1.18em;
+  min-height: 1em;
+  margin: 0 0.25rem 0 0;
+  text-align: center;
 }
 i.icons .icon {
   position: absolute;

@@ -1,5 +1,5 @@
 /*!
- * # Fomantic-UI 2.8.8 - Dropdown
+ * # Fomantic-UI 2.9.0-beta.171 - Dropdown
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -349,8 +349,14 @@
 .ui.dropdown.icon.button > .dropdown.icon {
   margin: 0;
 }
-.ui.button.dropdown .menu {
+.ui.dropdown.button .menu {
   min-width: 100%;
+}
+.ui.dropdown.button:not(.pointing):not(.floating).active {
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
+}
+.ui.dropdown.button:not(.pointing):not(.floating) > .menu {
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 
 
@@ -1254,7 +1260,6 @@ select.ui.dropdown {
   top: auto;
   bottom: 100%;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
-  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 
 /* Upward Sub Menu */
@@ -1268,7 +1273,12 @@ select.ui.dropdown {
 .ui.simple.upward.dropdown:hover {
   border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
 }
+
+/* Button */
 .ui.upward.dropdown.button:not(.pointing):not(.floating).active {
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
+}
+.ui.upward.dropdown.button:not(.pointing):not(.floating) > .menu {
   border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 
@@ -1277,6 +1287,7 @@ select.ui.dropdown {
   border-top-width: 1px !important;
   border-bottom-width: 0 !important;
   box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 .ui.upward.selection.dropdown:hover {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05);
@@ -1401,8 +1412,8 @@ select.ui.dropdown {
 }
 
 /*--------------
-     Columnar
----------------*/
+       Columnar
+  ---------------*/
 
 .ui.column.dropdown > .menu {
   flex-wrap: wrap;
@@ -1915,6 +1926,18 @@ select.ui.dropdown {
 .ui.dropdown .inverted.menu::-webkit-scrollbar-thumb:hover,
 .ui.inverted.dropdown .menu::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.35);
+}
+.ui.dropdown .inverted.menu,
+.ui.inverted.dropdown .menu {
+  
+/* IE11 */
+  scrollbar-face-color: #656565;
+  scrollbar-shadow-color: #656565;
+  scrollbar-track-color: #323232;
+  scrollbar-arrow-color: #323232;
+  
+/* firefox : first color thumb, second track */
+  scrollbar-color: rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.1);
 }
 .ui.pointing.dropdown > .inverted.menu:after,
 .ui.inverted.pointing.dropdown > .menu:after {
