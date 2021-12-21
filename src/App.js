@@ -26,7 +26,9 @@ class App extends React.Component{
   }
   render(){
     return(
-      <div className='ui container' style={{marginTop:'1em'}}>
+      
+      <div className="md:w-1/2 mx-auto bg-gray-200 dark:bg-gray-800 ">
+        
         <Searchbar handleFormSubmit={this.handleSubmit}/>
         <div className='ui grid'>
           <div className='ui row'>
