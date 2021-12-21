@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoDetail = ({video}) => {
     if (!video) {
-        return <div>Loading ...</div>;
+        return <div className='text-gray-800 dark:text-gray-500'>Loading ...</div>;
     }
 
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
